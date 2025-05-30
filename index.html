@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bảng Giá Makeup</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Quicksand:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Playfair+Display:wght@500;600&family=Quicksand:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-hong-nhat: #ef88ad;
+        --color-hong-tuoi: #ffb6b9;
+        --color-hong-dam: #f38181;
+        --color-trang-sang: #ffffff;
+      }
+
+      @layer base {
+        html {
+          font-family: "Quicksand", sans-serif;
+        }
+        h1 {
+          font-family: "Dancing Script", cursive;
+        }
+        h2 {
+          font-family: "Playfair Display", serif;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-pink-100 font-sans">
+    <div
+      class="max-w-2xl mx-auto bg-white shadow-xl rounded-3xl overflow-hidden p-4 mt-10 relative"
+    >
+      <!-- Header -->
+      <div
+        class="relative bg-gradient-to-r from-hong-tuoi via-hong-nhat to-hong-dam py-10 rounded-t-3xl text-center overflow-hidden border-b-2 border-hong-nhat"
+      >
+        <div class="absolute inset-0 opacity-10">
+          <svg
+            class="w-full h-full"
+            fill="none"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0 0 C20 30, 80 30, 100 0 V100 H0 Z"
+              fill="url(#header-gradient)"
+            />
+            <defs>
+              <linearGradient
+                id="header-gradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop
+                  offset="0%"
+                  style="stop-color: #ffffff; stop-opacity: 0.6"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: #ef88ad; stop-opacity: 0.4"
+                />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="relative z-10">
+          <h1
+            class="text-4xl md:text-5xl font-bold text-trang-sang drop-shadow-lg text-uppercase tracking-widest"
+          >
+            NGÔ PHƯƠNG NHI
+          </h1>
+          <p
+            class="text-trang-sang text-lg md:text-xl tracking-widest font-medium mt-4 flex items-center justify-center gap-4"
+          >
+            <span class="block w-16 h-0.5 bg-trang-sang opacity-80"></span>
+            MAKEUP ARTIST
+            <span class="block w-16 h-0.5 bg-trang-sang opacity-80"></span>
+          </p>
+        </div>
+        <div
+          class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-hong-nhat to-transparent"
+        ></div>
+      </div>
+
+      <!-- Section 1: Makeup Cô Dâu -->
+      <div class="mt-6">
+        <div class="flex items-start gap-4">
+          <img
+            src="co-dau.webp"
+            alt="Makeup Cô Dâu"
+            class="w-28 h-36 object-cover rounded-xl"
+          />
+          <div>
+            <h2
+              class="text-lg text-trang-sang bg-hong-tuoi inline-block mb-2 rounded-sm w-full text-center"
+            >
+              MAKEUP CÔ DÂU
+            </h2>
+            <hr class="bg-hong-dam" />
+            <ul class="text-sm space-y-1 list-none pl-0 mt-2">
+              <li class="flex items-start gap-2">
+                <span class="text-hong-nhat mt-0.5">❯</span
+                ><span class="text-hong-nhat"
+                  >Makeup Cô Dâu Đám Hỏi ................... 1TR5</span
+                >
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-hong-nhat mt-0.5">❯</span
+                ><span class="text-hong-nhat"
+                  >Makeup Cô Dâu Đám Cưới ................ 1TR5</span
+                >
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-hong-nhat mt-0.5">❯</span
+                ><span class="text-hong-nhat"
+                  >Makeup Cô Dâu Hiệp Lễ ..................... 800K</span
+                >
+              </li>
+              <li class="text-xs italic text-gray-500 pl-6">
+                ( Dịch vụ đã bao gồm: Lens - Tóc - Phụ Kiện )
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Makeup Khách Tiệc -->
+      <div class="mt-8">
+        <div class="flex items-start gap-4">
+          <div>
+            <h2
+              class="text-lg text-trang-sang bg-hong-tuoi inline-block mb-2 rounded-sm w-full text-center"
+            >
+              MAKEUP KHÁCH TIỆC
+            </h2>
+            <hr class="bg-hong-dam" />
+            <ul class="text-sm space-y-1 list-none pl-0 mt-2">
+              <li class="flex items-start gap-2">
+                <span class="text-hong-nhat mt-0.5">❯</span
+                ><span class="text-hong-nhat"
+                  >Khách tiệc đơn makeup đơn giản ......... 150K</span
+                >
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-hong-nhat mt-0.5">❯</span
+                ><span class="text-hong-nhat">
+                  Khách tiệc makeup theo tone yêu cầu (tuỳ layout)
+                  ...................................................
+                  250k-300k</span
+                >
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-hong-nhat mt-0.5">❯</span
+                ><span class="text-hong-nhat">
+                  Makeup bà Sui ..............................................
+                  300K</span
+                >
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-hong-nhat mt-0.5">❯</span
+                ><span class="text-hong-nhat"
+                  >Makeup chụp concept, lookbook .......... 450k</span
+                >
+              </li>
+              <li class="text-xs italic text-gray-500 pl-6">
+                ( Dịch vụ đã bao gồm Tóc & Phí đi lại )
+              </li>
+            </ul>
+          </div>
+          <img
+            src="co-dau-2.webp"
+            alt="Makeup Khách Tiệc"
+            class="w-28 h-36 object-cover rounded-xl"
+          />
+        </div>
+      </div>
+
+      <!-- Section 3: Dạy Makeup -->
+      <div class="mt-8">
+        <div class="flex items-start gap-4">
+          <img
+            src="co-dau-3.jpg"
+            alt="Dạy Makeup"
+            class="w-28 h-36 object-cover rounded-xl"
+          />
+          <div>
+            <h2
+              class="text-lg text-trang-sang bg-hong-tuoi inline-block mb-2 rounded-sm w-full text-center"
+            >
+              DẠY MAKEUP CÁ NHÂN
+            </h2>
+            <p class="text-sm font-medium text-pink-800 text-center">
+              KÈM 1: 1
+            </p>
+            <hr class="bg-hong-dam" />
+            <ul class="text-sm space-y-1 list-none pl-0 mt-2">
+              <li class="flex items-start gap-2">
+                <span class="text-hong-nhat mt-0.5">❯</span
+                ><span class="text-hong-nhat"
+                  >Gói Cơ Bản ( 5 buổi ) ............................ 899K</span
+                >
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-hong-nhat mt-0.5">❯</span
+                ><span class="text-hong-nhat"
+                  >Gói Nâng Cao ( 8 - 10 buổi ) ............ 1TR5</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Note -->
+      <div class="mt-6 text-xs text-hong-nhat italic space-y-1">
+        <div class="text-left">CAM KẾT Mỹ phẩm chính hãng cao cấp</div>
+        <div class="text-right">
+          Dưỡng da trước khi makeup & tư vấn tone makeup phù hợp.
+        </div>
+      </div>
+      <!-- Contact Info  -->
+      <div class="mt-4 text-sm text-center text-hong-nhat font-medium">
+        <p>📍 Phan Rang, Ninh Thuận</p>
+        <p>📞 0337 217 675</p>
+      </div>
+    </div>
+  </body>
+</html>
