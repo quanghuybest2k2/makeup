@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bảng Giá Makeup</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Preload Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Quicksand:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <style type="text/tailwindcss">
       @theme {
         --color-hong-nhat: #ef88ad;
@@ -27,10 +34,15 @@
         h2 {
           font-family: "Playfair Display", serif;
         }
+        body {
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
       }
     </style>
   </head>
-  <body class="bg-pink-100 font-sans">
+
+  <body class="bg-pink-100 font-sans antialiased">
     <div
       class="w-full max-w-lg mx-auto bg-white shadow-xl rounded-3xl overflow-hidden p-4 sm:p-6 md:p-8 mt-10 relative mb-10"
     >
@@ -71,7 +83,7 @@
         </div>
         <div class="relative z-10">
           <h1
-            class="text-4xl md:text-5xl font-bold text-trang-sang drop-shadow-lg text-uppercase tracking-widest"
+            class="text-4xl md:text-5xl font-bold text-trang-sang drop-shadow-lg tracking-widest"
           >
             NGÔ PHƯƠNG NHI
           </h1>
@@ -83,9 +95,6 @@
             <span class="block w-16 h-0.5 bg-trang-sang opacity-80"></span>
           </p>
         </div>
-        <div
-          class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-hong-nhat to-transparent"
-        ></div>
       </div>
 
       <!-- Section 1: Makeup Cô Dâu -->
@@ -97,7 +106,7 @@
             <img
               src="./mau-1.jfif"
               alt="Makeup Cô Dâu"
-               class="w-full h-full object-cover brightness-110 contrast-110 saturate-150 shadow-xl transition hover:scale-105"
+              class="w-full h-full object-cover brightness-110 contrast-110 saturate-150 shadow-xl transition hover:scale-105"
             />
           </div>
 
@@ -108,38 +117,38 @@
               MAKEUP CÔ DÂU
             </h2>
             <hr class="bg-hong-dam" />
-            <ul class="text-sm space-y-1 list-none pl-0 mt-2">
+            <ul class="text-base space-y-1 list-none pl-0 mt-2">
               <li class="flex items-start gap-2">
-                <span class="text-hong-nhat mt-0.5">❯</span>
-                <span class="flex-1 flex justify-between text-hong-nhat">
+                <span class="text-hong-dam mt-0.5">❯</span>
+                <span class="flex-1 flex justify-between text-hong-dam">
                   <span>Makeup Cô Dâu Đám Hỏi</span>
                   <span
-                    class="flex-grow border-dotted border-b border-hong-nhat mx-2"
+                    class="flex-grow border-dotted border-b border-hong-dam mx-2"
                   ></span>
                   <span>1TR1</span>
                 </span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-hong-nhat mt-0.5">❯</span>
-                <span class="flex-1 flex justify-between text-hong-nhat">
+                <span class="text-hong-dam mt-0.5">❯</span>
+                <span class="flex-1 flex justify-between text-hong-dam">
                   <span>Makeup Cô Dâu Đám Cưới</span>
                   <span
-                    class="flex-grow border-dotted border-b border-hong-nhat mx-2"
+                    class="flex-grow border-dotted border-b border-hong-dam mx-2"
                   ></span>
                   <span>1TR5</span>
                 </span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-hong-nhat mt-0.5">❯</span>
-                <span class="flex-1 flex justify-between text-hong-nhat">
+                <span class="text-hong-dam mt-0.5">❯</span>
+                <span class="flex-1 flex justify-between text-hong-dam">
                   <span>Makeup Cô Dâu Hiệp Lễ</span>
                   <span
-                    class="flex-grow border-dotted border-b border-hong-nhat mx-2"
+                    class="flex-grow border-dotted border-b border-hong-dam mx-2"
                   ></span>
                   <span>800K</span>
                 </span>
               </li>
-              <li class="text-xs italic text-gray-500 pl-6">
+              <li class="text-sm italic text-gray-500 pl-6">
                 ( Dịch vụ đã bao gồm: Lens - Tóc - Phụ Kiện )
               </li>
             </ul>
@@ -157,52 +166,52 @@
               MAKEUP KHÁCH TIỆC
             </h2>
             <hr class="bg-hong-dam" />
-            <ul class="text-sm space-y-1 list-none pl-0 mt-2">
+            <ul class="text-base space-y-1 list-none pl-0 mt-2">
               <li class="flex items-start gap-2">
-                <span class="text-hong-nhat mt-0.5">❯</span>
-                <span class="flex-1 flex justify-between text-hong-nhat">
+                <span class="text-hong-dam mt-0.5">❯</span>
+                <span class="flex-1 flex justify-between text-hong-dam">
                   <span>Khách tiệc makeup đơn giản</span>
                   <span
-                    class="flex-grow border-dotted border-b border-hong-nhat mx-2"
+                    class="flex-grow border-dotted border-b border-hong-dam mx-2"
                   ></span>
                   <span>150K</span>
                 </span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-hong-nhat mt-0.5">❯</span>
+                <span class="text-hong-dam mt-0.5">❯</span>
                 <span
-                  class="flex-1 flex items-center gap-2 flex-wrap text-hong-nhat text-sm"
+                  class="flex-1 flex items-center gap-2 flex-wrap text-hong-dam"
                 >
                   <span class="whitespace-nowrap"
                     >Theo tone yêu cầu (tuỳ layout)</span
                   >
                   <span
-                    class="flex-grow border-dotted border-b border-hong-nhat mx-1"
+                    class="flex-grow border-dotted border-b border-hong-dam mx-1"
                   ></span>
                   <span class="whitespace-nowrap">250K–300K</span>
                 </span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-hong-nhat mt-0.5">❯</span>
-                <span class="flex-1 flex justify-between text-hong-nhat">
+                <span class="text-hong-dam mt-0.5">❯</span>
+                <span class="flex-1 flex justify-between text-hong-dam">
                   <span>Makeup bà Sui</span>
                   <span
-                    class="flex-grow border-dotted border-b border-hong-nhat mx-2"
+                    class="flex-grow border-dotted border-b border-hong-dam mx-2"
                   ></span>
                   <span>300K</span>
                 </span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-hong-nhat mt-0.5">❯</span>
-                <span class="flex-1 flex justify-between text-hong-nhat">
+                <span class="text-hong-dam mt-0.5">❯</span>
+                <span class="flex-1 flex justify-between text-hong-dam">
                   <span>Makeup concept, lookbook</span>
                   <span
-                    class="flex-grow border-dotted border-b border-hong-nhat mx-2"
+                    class="flex-grow border-dotted border-b border-hong-dam mx-2"
                   ></span>
                   <span>450K</span>
                 </span>
               </li>
-              <li class="text-xs italic text-gray-500 pl-6">
+              <li class="text-sm italic text-gray-500 pl-6">
                 ( Dịch vụ đã bao gồm Tóc & Phí đi lại )
               </li>
             </ul>
@@ -213,7 +222,7 @@
             <img
               src="./mau-2.jfif"
               alt="Makeup Khách Tiệc"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover shadow-xl transition hover:scale-105"
             />
           </div>
         </div>
@@ -228,7 +237,7 @@
             <img
               src="./mau-3.jfif"
               alt="Dạy Makeup"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover shadow-xl transition hover:scale-105"
             />
           </div>
 
@@ -238,31 +247,31 @@
             >
               DẠY MAKEUP CÁ NHÂN
             </h2>
-            <p class="text-sm font-medium text-pink-800 text-center">
-              KÈM 1: 1
+            <p class="text-base font-semibold text-pink-800 text-center">
+              KÈM 1:1
             </p>
             <hr class="bg-hong-dam" />
-            <ul class="text-sm space-y-1 list-none pl-0 mt-2">
+            <ul class="text-base space-y-1 list-none pl-0 mt-2">
               <li class="flex items-start gap-2">
-                <span class="text-hong-nhat mt-0.5">❯</span>
-                <span class="flex-1 flex justify-between text-hong-nhat">
+                <span class="text-hong-dam mt-0.5">❯</span>
+                <span class="flex-1 flex justify-between text-hong-dam">
                   <span>Gói Cơ Bản (5 buổi)</span>
                   <span
-                    class="flex-grow border-dotted border-b border-hong-nhat mx-2"
+                    class="flex-grow border-dotted border-b border-hong-dam mx-2"
                   ></span>
                   <span>899K</span>
                 </span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-hong-nhat mt-0.5">❯</span>
+                <span class="text-hong-dam mt-0.5">❯</span>
                 <span
-                  class="flex-1 flex items-center gap-2 flex-wrap text-hong-nhat text-sm"
+                  class="flex-1 flex items-center gap-2 flex-wrap text-hong-dam"
                 >
                   <span class="whitespace-nowrap"
                     >Gói Nâng Cao (8–10 buổi)</span
                   >
                   <span
-                    class="flex-grow border-dotted border-b border-hong-nhat mx-1"
+                    class="flex-grow border-dotted border-b border-hong-dam mx-1"
                   ></span>
                   <span class="whitespace-nowrap">1TR5</span>
                 </span>
@@ -273,14 +282,15 @@
       </div>
 
       <!-- Footer Note -->
-      <div class="mt-6 text-xs text-hong-nhat italic space-y-1">
+      <div class="mt-6 text-sm text-hong-dam italic space-y-1">
         <div class="text-left">CAM KẾT Mỹ phẩm chính hãng cao cấp</div>
         <div class="text-right">
           Dưỡng da trước khi makeup & tư vấn tone makeup phù hợp.
         </div>
       </div>
-      <!-- Contact Info  -->
-      <div class="mt-4 text-sm text-center text-hong-nhat font-medium">
+
+      <!-- Contact Info -->
+      <div class="mt-4 text-sm text-center text-hong-dam font-medium">
         <p>📍 Phan Rang, Ninh Thuận</p>
         <p>📞 0337 217 675</p>
       </div>
